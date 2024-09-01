@@ -85,7 +85,7 @@ app.post("/auth/register", async (req, res) => {
   const user = new User({
     name,
     email,
-    passwordHash,
+    password: passwordHash,
   });
 
   try {
